@@ -60,9 +60,17 @@ county_coefs <- col_data %>%
     group_by(state, county) %>%
     summarise(child_coef = get_child_coef(cur_data_all()), .groups = "drop")
 
+# calculate average child coefficient by state
+state_coefs <- county_coefs %>%
+    group_by(state) %>%
+    summarise(
+    avg_child_coef_state = mean(child_coef, na.rm = TRUE),
+    .groups = "drop"
+  )
 #merge back with main data
 col_data <- col_data %>%
-    left_join(county_coefs, by = c("state", "county"))
+    left_join(county_coefs, by = c("state", "county")) %>%
+    left_join(state_coefs, by = "state")
 
 #saves to csv
 write.csv(col_data, "C:/Users/joelt/Downloads/Jtorres Google Data Analytics Capstone/col_data_updated.csv", row.names = FALSE)
