@@ -1,0 +1,4 @@
+{
+    "r.linting.maxLineLength": 200,
+    "r.linting.enable": false
+}
