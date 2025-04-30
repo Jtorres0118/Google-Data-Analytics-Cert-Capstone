@@ -6,6 +6,8 @@ date: "4/22/2025"
 output: github_document
 ---
 
+## Abstract
+This project investigates the financial burden of raising children across U.S. counties using a cleaned cost of living dataset. By comparing median family income to total household costs, we assess whether families are operating at a surplus or deficit. Visualizations and regression analysis reveal that even one child can push many families into financial strain, with the deficit sharply increasing with each additional child. The findings highlight the structural economic challenges that discourage family growth and suggest that current incentives may be insufficient to reverse trends toward population decline. This analysis underscores the urgent need for policy reforms to support family sustainability in America.
 
 ## Getting Started
 **Before running this document, install packages with:**
