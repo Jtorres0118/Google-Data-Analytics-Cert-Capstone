@@ -41,7 +41,21 @@ You can download the cleaned (in SQL) data
 col_data<-rio::import("C:\\Users\\joelt\\Downloads\\Jtorres Google Data Analytics Capstone\\cleaned_col.csv")
 ```
 
-## Cleaning the Data
+## About the Data
+
+The dataset used in this analysis provides detailed cost of living and
+income information for families across U.S. counties. Each row
+represents a specific family structure, defined by the number of
+children (ranging from 0 to 4) and number of adults (either 1 or 2),
+along with the total family size. For each county, there are multiple
+entries—one for every unique combination of adult and child
+count—resulting in comprehensive coverage of different household
+scenarios. The dataset includes a breakdown of key annual expenses such
+as housing, food, transportation, healthcare, other necessities,
+childcare, and taxes, as well as the total cost of living. Median family
+income is also provided, allowing for analysis of remaining income
+(income minus total costs) and financial viability across regions and
+family types.
 
 For further use in R, I first cleaned the [original
 data](https://www.kaggle.com/datasets/asaniczka/us-cost-of-living-dataset-3171-counties/data)

@@ -629,7 +629,20 @@ install.packages(c(“tidyverse”, “ggplot2”, “scales”, “rio”))</p>
 <p>You can download the cleaned (in SQL) data <a href="https://drive.google.com/file/d/1Hs67_g3ki1b4YYeYwLMvQhrgUlAHMH2o/view?usp=sharing">here</a>.</p>
 <div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" tabindex="-1"></a><span class="co">#Reads in the data</span></span>
 <span id="cb2-2"><a href="#cb2-2" tabindex="-1"></a>col_data<span class="ot">&lt;-</span>rio<span class="sc">::</span><span class="fu">import</span>(<span class="st">&quot;C:</span><span class="sc">\\</span><span class="st">Users</span><span class="sc">\\</span><span class="st">joelt</span><span class="sc">\\</span><span class="st">Downloads</span><span class="sc">\\</span><span class="st">Jtorres Google Data Analytics Capstone</span><span class="sc">\\</span><span class="st">cleaned_col.csv&quot;</span>)</span></code></pre></div>
-<h2 id="cleaning-the-data">Cleaning the Data</h2>
+<h2 id="about-the-data">About the Data</h2>
+<p>The dataset used in this analysis provides detailed cost of living
+and income information for families across U.S. counties. Each row
+represents a specific family structure, defined by the number of
+children (ranging from 0 to 4) and number of adults (either 1 or 2),
+along with the total family size. For each county, there are multiple
+entries—one for every unique combination of adult and child
+count—resulting in comprehensive coverage of different household
+scenarios. The dataset includes a breakdown of key annual expenses such
+as housing, food, transportation, healthcare, other necessities,
+childcare, and taxes, as well as the total cost of living. Median family
+income is also provided, allowing for analysis of remaining income
+(income minus total costs) and financial viability across regions and
+family types.</p>
 <p>For further use in R, I first cleaned the <a href="https://www.kaggle.com/datasets/asaniczka/us-cost-of-living-dataset-3171-counties/data">original
 data</a> by doing the following in sheets and sql: -Removing unnecessary
 data (area name, metro boolean, etc) -Extracting specific family count
