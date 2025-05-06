@@ -1,0 +1,26 @@
+--DESCRIPTION: This code is how I queried the code I used for the R files. 
+
+--Creates a temporary table to be split by all the homes with 1 adult and 2 adults for further comparison between the number of children and cost of living (will be done in R)
+--Ensures a duplicate table doesn't exist
+DROP TABLE IF EXISTS child_cost;
+--Initializes table
+CREATE TEMP TABLE child_cost AS
+--pulls all relevant columns from the dataset
+SELECT  state,
+        county,
+        Number_children,
+        Number_adults,
+        Family_Size,
+        housing_cost,
+        food_cost,
+        transportation_cost,
+        healthcare_cost,
+        other_necessities_cost,
+        childcare_cost,
+        taxes,
+        total_cost,
+        median_family_income
+FROM steam-curve-456913-e6.Test_county_data.Test_county_table
+--sorts by state name, county name, and number of children
+ORDER BY state, county, Number_children;
+SELECT * FROM child_cost
