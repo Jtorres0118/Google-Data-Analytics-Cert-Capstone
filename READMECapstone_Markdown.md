@@ -15,7 +15,7 @@ each additional child. The findings highlight the structural economic
 challenges that discourage family growth and suggest that current
 incentives may be insufficient to reverse trends toward population
 decline. This analysis underscores the urgent need for policy reforms to
-support family sustainability in America.
+support family sustainability in America. You can find a Tableau visualization [here](https://public.tableau.com/app/profile/joel.torres7010/viz/JoelTorresGoogleDataAnalyticsCertCapstoneFinancialFeasabilityofChildren/FixedDashboard)
 
 ## Getting Started
 
